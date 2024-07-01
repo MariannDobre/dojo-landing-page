@@ -1,4 +1,4 @@
-# Dojo - Live Free
+### Dojo - Live Free
 
 **A landing page for a fictional company targeting people who love cocktails.**
 
@@ -16,6 +16,7 @@
 #
 
 - **App features**:
+
   - Filter based on alcohol type
   - Storing data in the browser storage
   - Lazy loading product images and section images
