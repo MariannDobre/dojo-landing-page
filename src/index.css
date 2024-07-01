@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --clr-white: #fff;
+  --clr-black: #000;
+
+  --clr-gray-300: #d1d5db;
+
+  --clr-zinc-400: #a1a1aa;
+  --clr-zinc-700: #3f3f46;
+  --clr-zinc-800: #27272a;
+
+  --clr-red-400: #f87171;
+  --clr-red-600: #dc2626;
+
+  --clr-amber-400: #fbbf24;
+  --clr-amber-500: #f59e0b;
+
+  --font-fam-sans: 'Montserrat', sans-serif;
+  --font-fam-serif: 'Noto Serif', serif;
+
+  --font-size-xs: 1.2rem;
+  --font-size-sm: 1.4rem;
+  --font-size-base: 1.6rem;
+  --font-size-md: 2rem;
+  --font-size-lg: 2.4rem;
+  --font-size-xl: 2.8rem;
+  --font-size-2xl: 3.2rem;
+  --font-size-3xl: 3.6rem;
+
+  --ltr-spacing-xs: 0.1rem;
+  --ltr-spacing-sm: 0.15rem;
+
+  --word-spacing-xs: 0.1rem;
+  --word-spacing-sm: 0.15rem;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: var(--clr-black);
+}
+
+.loading {
+  filter: blur(1.2rem);
+  clip-path: inset(0);
+}
+
+.loaded {
+  filter: blur(0);
+  transition: filter 0.35s linear;
+}
