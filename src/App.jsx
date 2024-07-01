@@ -2,6 +2,8 @@ import React, { Suspense, lazy } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Age from './pages/age';
 import Loader from './components/loader';
+import PrivateRoutes from './utils/privateRoutes';
+import PageNotFound from './pages/pageNotFound';
 
 const Home = lazy(() => import('./pages/home'));
 const Recipes = lazy(() => import('./pages/recipes'));
@@ -17,19 +19,26 @@ function App() {
             element={<Age />}
           />
 
-          <Route
-            path='/home'
-            element={<Home />}
-          />
+          <Route element={<PrivateRoutes />}>
+            <Route
+              path='/home'
+              element={<Home />}
+            />
+
+            <Route
+              path='/recipes'
+              element={<Recipes />}
+            />
+
+            <Route
+              path='/recipes/:recipeName'
+              element={<RecipeDetails />}
+            />
+          </Route>
 
           <Route
-            path='/recipes'
-            element={<Recipes />}
-          />
-
-          <Route
-            path='/recipes/:recipeName'
-            element={<RecipeDetails />}
+            path='*'
+            element={<PageNotFound />}
           />
         </Routes>
       </BrowserRouter>
