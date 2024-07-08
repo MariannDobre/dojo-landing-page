@@ -1,6 +1,6 @@
 ### Dojo - Live Free
 
-**A landing page for a fictional company targeting people who love cocktails.**
+**A landing page for a fictional company targeting people who love cocktails. Check it [here]().**
 
 #
 
